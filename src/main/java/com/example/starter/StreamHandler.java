@@ -189,7 +189,6 @@ public class StreamHandler implements Handler<RoutingContext> {
         logger.error("Cannot saving ids, error from database: " + res.cause().getMessage(), res.cause());
         promise.fail(res.cause());
       } else {
-        logger.info("Save instances complete");
         promise.complete();
         databaseWriteStream.invokeDrainHandler();
       }

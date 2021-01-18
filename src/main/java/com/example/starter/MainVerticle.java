@@ -15,7 +15,7 @@ public class MainVerticle extends AbstractVerticle {
 
   private static final Logger logger = LogManager.getLogger(StreamHandler.class);
 
-  private static final String URI = "/test";
+  private static final String URI = "/oai/records";
   private final Handler<RoutingContext> handler;
 
   public MainVerticle() {
